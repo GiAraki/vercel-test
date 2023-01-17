@@ -1,37 +1,39 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
+    
 }
 
-header,
+header,h1,
 section h2,
-section h3,
+section h3, 
 form button {
-    font-family: 'Bungee', cursiva;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: normal;
 }
 
-body,
-input,
-textarea,
-footer {
-    font-family: 'Roboto', sem serifa;
+body, input, textarea {
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
-    padding: 16px ;
-    background-color: black;
-    color: rgb(240, 236, 230);
+    padding: 26px 5px;
+    background-color: #000 ;
+    color: #d1d0d0;
 }
+
 
 header nav li {
     display: inline;
-    margin-left: 16px;
+    margin-left: 16pxs;
+    color: #ecf0f1;
     font-size: 18px;
+    padding: 6px;
 }
+
 header nav li a {
-    color: rgb(240, 236, 230);
+    color: #ecf0f1;
     text-decoration: none;
 }
 
@@ -41,19 +43,18 @@ header nav li a {
     margin: 0 auto;
 }
 
-header .container,
-section .container{
+header .container, 
+section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.brands img {
-    height: 24px;
-
+.brands-list img {
+    height: 40px;
 }
 
-.brands li {
+.brands-list li {
     display: inline;
     margin-right: 8px;
 }
@@ -71,36 +72,37 @@ section h2 {
 }
 
 section {
-    color: black;
+    color: #000;
 }
 
 section p {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
-.img-loja {
-    margin-right: 40px;
+.store-front {
+    margin-right: 32px;
 }
 
-.logos img {
-    height: 24px; 
+.social-links img {
+    height: 24px;
 }
 
-.logos li {
+.social-links li {
     display: inline;
     margin-right: 8px;
 }
-.logos li a {
+
+.social-links li a {
     text-decoration: none;
 }
 
-#contato .container {
-    display: flex;
+#contact .container {
+    display: block;
 }
 
 .contact-methods {
-display: flex;
-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 form input,
@@ -114,7 +116,7 @@ form button {
 
 form textarea {
     resize: none;
-    height: 100px;
+    height: 180px;
 }
 
 section h3 {
@@ -122,19 +124,22 @@ section h3 {
 }
 
 form button {
-    background-color:black ;
-    color: rgb(240, 236, 230);
+    background-color: #000;
+    color: #fff;
     border: none;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(68, 67, 67);
+}
+
+input:focus, textarea:focus {
+    outline-color: #182c61;
 }
 
 footer {
-    padding: 20px 0;
-    background-color: black;
-    color: rgb(240, 236, 230);
-
+    background-color: #000;
+    color: #ecf0f1;
+    padding: 16px 0;
 }
