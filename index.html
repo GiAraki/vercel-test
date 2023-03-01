@@ -1,87 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Imobiliária Grande Rio</title>
-    <link rel="stylesheet" href="./main.css">
-  </head>
-  <body>
+    <title>Barbearia velho corte</title>
+    <link rel="stylesheet" href="main.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">          
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+</head>
+<body>
     <header>
-        <div class="container">
-            <h1>Imobiliária Grande Rio</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">Sobre a Imobiliária</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section id="about">
-        <div class="container">
-            <img src="Imagens/Lançamento.png" alt="Lançamento" class="center-img">
-            <h2>Sobre a Imobiliária</h2>
-            <p>Somos a principal imobiliária do Rio de Janeiro, fazemos negócios com todos os tipos de empreendimentos.Preencha o formulário abaixo e um dos nossos consultores entrará em contato. 
-            </p>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h3>Entre em contato</h3>
-            <form action="#" method="post">
-                <div>
-                    <input type="text" name="name" placeholder="Nome" required>
-                </div>
-                <div>
-                    <input type="email" name="email" placeholder="E-mail" required>
-                </div>
-                <div>
-                    <input type="tel" name="phone" placeholder="Telefone" required>
-                </div>
-                <div>
-                    <textarea name="message" placeholder="Mensagem" required></textarea>
-                </div>
-                <div>
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
-            <h3>Nos acompanhe</h3>
-            <ul class="social-links">
+        <h1>Barbearia velho corte</h1>
+        <nav>
+            <ul>
                 <li>
-                    <a href="#">
-                        <img src="Imagens/instagram.png" alt="Instagram">
-                    </a>
+                    <a href="#sobre">Sobre nós</a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="Imagens/facebook.png" alt="Facebook">
-                    </a>
+                    <a href="#galeria">Galeria</a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="Imagens/youtube.png" alt="YouTube">
-                    </a>
+                    <a href="#contato">Contato</a>
+                </li>
+                <li>
+                    <a href="#fale">Fale conosco</a>
+                </li>
+                <li>
+                    <a href="#siga">Nos siga</a>
                 </li>
             </ul>
-            <h3>Venha nos visitar</h3>
-                    <p>
-                        Rua José Antunes, 123 - Barra da Tijuca - Rio de Janeiro - RJ
-                    </p>
+        </nav>
+    </header>
+    <main>
+        <div id="apresentacao">
+            <img src="imagens/fachada.jpg" alt="Imagem apresentacao">
             <div>
+                <h2>Sobre nós</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo quasi suscipit accusantium perspiciatis, optio ut quae porro! Odit facilis cumque dolorem? Iste incidunt autem praesentium, cupiditate vitae veritatis voluptatibus quo?
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo quasi suscipit accusantium perspiciatis, optio ut quae porro! Odit facilis cumque dolorem? Iste incidunt autem praesentium, cupiditate vitae veritatis voluptatibus quo?
+                </p>
+        </div>
+        </div>
+        <div id="galeria">
+            <h2 >Galeria</h2>
             </div>
-            </section>
-            <footer>
-                <div class="container">
-                    <p>
-                        &copy; Imobiliaria Grande Rio - Todos os direitos reservados - 2023
-                    </p>
-                </div>
-            </footer>
-  </body>  
+        <div id="foto">
+            <img src="imagens/corte_1.jpeg" alt="corte 1">
+            <img src="imagens/corte_2.jpg" alt="corte 2">
+            <img src="imagens/corte_3.jpg" alt="corte 3">
+            <img src="imagens/corte_4.jpg" alt="corte 4">
+        </div>
+        <div id="contato">
+            <h2 >Contato</h2>
+        </div>
+        <div>
+            <p>
+                Rua HTML, nº 123, Jardim Javascript, Porto Alegre-rs
+            </p>
+            <p>Contato: 51 999999999</p>
+        </div>
+        <div id="fale">
+            <h2>Fale conosco</h2>
+        </div>
+            <div>
+            <form>
+                <input type="text" placeholder="Seu nome" required>
+                <input type="text" placeholder="Seu email" required>
+                <input type="text" placeholder="Seu telefone (opcional)">
+                <textarea placeholder="Sua mensagem"required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div id="siga">
+            <h2>Nos siga nas redes</h2>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#"><img src="imagens/twitter.svg" alt="Logo twitter"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="imagens/twitch.svg" alt="Logo twitch"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="imagens/instagram.svg" alt="Logo insta"></a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+    <footer>
+        <h3>
+            &copy; Velho Corte - Todos os direitos reservados - 2023
+        </h3>
+    </footer>
+</body>
 </html>
