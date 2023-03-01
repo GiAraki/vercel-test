@@ -1,39 +1,55 @@
 * {
     margin: 0;
-    padding: 0px;
+    padding: 0;
     box-sizing: border-box;
-    
 }
 
-header,h1,
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header, 
 section h2,
-section h3, 
-form button {
-    font-family: 'Nunito Sans', sans-serif;
+section h3 {
+    font-family: 'Bungee', cursive;
     font-weight: normal;
 }
 
-body, input, textarea {
-    font-family: 'Roboto', sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
 }
 
 header {
-    padding: 26px 5px;
-    background-color: #000 ;
-    color: #d1d0d0;
+    padding: 16px 0;
+    background-color: rgb(230, 9, 9);
+    color:rgb(233, 225, 225);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+header h1 {
+    font-size: 36px;
+    text-align: center;
 }
 
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    list-style: none;
+}
 
 header nav li {
     display: inline;
-    margin-left: 16pxs;
-    color: #ecf0f1;
-    font-size: 18px;
-    padding: 6px;
+    margin-left: 16px;
+    font-size: 24px;
 }
 
 header nav li a {
-    color: #ecf0f1;
+    color: white;
     text-decoration: none;
 }
 
@@ -43,103 +59,104 @@ header nav li a {
     margin: 0 auto;
 }
 
-header .container, 
-section .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.brands-list img {
-    height: 40px;
-}
-
-.brands-list li {
-    display: inline;
-    margin-right: 8px;
-}
-
-section .container {
-    align-items: flex-start;
-}
-
-section {
-    padding: 24px 0;
-}
-
-section h2 {
-    margin-bottom: 16px;
-}
-
-section {
-    color: #000;
-}
-
-section p {
-    margin-bottom: 8px;
-}
-
-.store-front {
-    margin-right: 32px;
-}
-
-.social-links img {
-    height: 24px;
-}
-
-.social-links li {
-    display: inline;
-    margin-right: 8px;
-}
-
-.social-links li a {
-    text-decoration: none;
-}
-
-#contact .container {
+.center-img {
     display: block;
-}
-
-.contact-methods {
-    display: flex;
-    justify-content: space-between;
-}
-
-form input,
-form textarea,
-form button {
-    display: block;
-    width: 320px;
-    margin-bottom: 8px;
-    padding: 8px;
-}
-
-form textarea {
-    resize: none;
-    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 section h3 {
-    margin-bottom: 16px;
+    height: 24px;
+    display: inline-block;
+    margin: 10px;
+    font-size: 18px;
+    text-align: center;
 }
 
-form button {
-    background-color: #000;
-    color: #fff;
+.social-links img {
+    display: inline-block;
+    border: 1px solid #ccc;
+    height: 25px;
+    text-align: center;
     border: none;
+  }
+
+  .social-links li {
+    display: inline;
+    margin-right: 8px;
+  }
+
+.social-links li a {
+text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  form textarea {
+    width: 100%;
+    height: 128px;
+    padding: 8px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    resize: none;
+  }
+
+  form button[type="submit"] {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(230, 9, 9);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-}
+  }
 
-form button:hover {
-    background-color: rgb(68, 67, 67);
-}
+  form button[type="submit"]:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(230, 9, 9);
+  }
 
-input:focus, textarea:focus {
-    outline-color: #182c61;
-}
+  #contact .container {
+    display:block;
+  }
 
-footer {
-    background-color: #000;
-    color: #ecf0f1;
+  .contact-methods {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  section h3 {
+    margin-bottom: 16px;
+  }
+
+  footer {
+    background-color: rgb(230, 9, 9);
+    color: rgb(255, 255, 255);
     padding: 16px 0;
-}
+  }
