@@ -1,35 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu aniversário</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
 </head>
-<body>
-    <header class="hero">
+<body> 
         <div class="container">
-            <img class="hero__logo" src="images/renan.png" alt="Renan"/>
-            <p class="hero__text">
-                A maior festa de aniversário começa em <br><span id="contador"></span>
-            </p>
-            <div class="infos-bar">
-                <ul class="infos-bar__infos">
-                    <li class="infos-bar__infos__item">
-                        <b>Onde:</b>
-                        Três Barras do Paraná
-                    </li>
-                    <li class="infos-bar__infos__item">
-                        <b>Quando:</b>
-                        29/08/2023 às 19h
-                    </li>
-                </ul>
-                <a href="#" class="button button--primary">
-                    Confirmar presença
-                </a>
+        <div id="carousel-ex" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                <img class="d-block w-100 " src="https://cdn.pixabay.com/photo/2023/05/28/00/34/sunset-8022573_1280.jpg">
+                </div >
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100 " src="https://cdn.pixabay.com/photo/2023/06/18/00/38/beetle-8070966_1280.jpg">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100 " src="https://cdn.pixabay.com/photo/2023/06/16/11/47/books-8067850_1280.jpg">
+                </div>
+            </div>
+            <button data-bs-target="#carousel-ex" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-ex" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                <img src="https://via.placeholder.com/100x100" />
+                    <div class="card-body">
+                        <h4 class="card-tittle">titulo do card</h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi est possimus tempora obcaecati facere, hic dolorem, et eveniet fuga repudiandae sequi pariatur rerum repellendus, dolores officiis officia voluptates doloremque velit!
+                        </p>
+                </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                <img src="https://via.placeholder.com/100x100" />
+                    <div class="card-body">
+                        <h4 class="card-tittle">titulo do card</h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi est possimus tempora obcaecati facere, hic dolorem, et eveniet fuga repudiandae sequi pariatur rerum repellendus, dolores officiis officia voluptates doloremque velit!
+                        </p>
+                </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                <img src="https://via.placeholder.com/100x100" />
+                    <div class="card-body">
+                        <h4 class="card-tittle">titulo do card</h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi est possimus tempora obcaecati facere, hic dolorem, et eveniet fuga repudiandae sequi pariatur rerum repellendus, dolores officiis officia voluptates doloremque velit!
+                        </p>
+                </div>
+                </div>
+            </div>
+            
             </div>
         </div>
-    </header>
-    <script src="./scripts/main.js"></script>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
