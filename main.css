@@ -1,0 +1,52 @@
+    *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    header {
+        background-color: #2f3640;
+        padding: 16px 0 ;
+    }
+    h1 {
+        color:blue
+    }
+    #Entreterimento h2 {
+        color: violet
+    }
+    #tec h2 {
+        color: gold;
+    }
+
+    .container {
+        width: 1366px;
+        margin: 0 auto;
+    }
+    .articles {
+        display: flex;
+        display: inline;
+        justify-content: space-between;
+    }
+
+    .articles img {
+        height: 180px;
+    
+    }
+
+    .articles {
+        width: 30%;
+    
+    }
+
+    section h2 {
+        margin-bottom: 16px;
+    }
+
+    .articles p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+
+    .articles h2 {
+        font-size: 24px;
+    }
+    
