@@ -1,21 +1,27 @@
 AOS.init();
 
-const dataEvento = new Date('Dec 12, 2023 19:00:00');
-const timeStampEvento = dataEvento.getTime();
+const dataDoEvento = new Date("Feb 26, 2024 16:00:00");
+const timeStampDoEvento = dataDoEvento.getTime();
 
-const contaHoras = setInterval(function(){
-                        const agoraTimesStamp = new Date().getTime();
-                        const diferenca = timeStampEvento - agoraTimesStamp;
-                        const distaciaDias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
-                        const distaciaHoras = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                        const distaciaMinutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
-                        const distaciaSegundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+const contaAsHoras = setInterval(function() {
+    const agora = new Date();
+    const timeStampAtual = agora.getTime();
 
-                        if (diferenca < 0) {
-                            clearInterval(contaHoras);
-                            document.getElementById('contador').innerHTML = 'Evento expirado';
-                            return;
-                        }else{
-                            document.getElementById('contador').innerHTML = `${distaciaDias}d ${distaciaHoras}h ${distaciaMinutos}m ${distaciaSegundos}s`;
-                        }
-                    }, 1000)
+    const distanciaAteOEvento = timeStampDoEvento - timeStampAtual;
+
+    const diaEmMs = 1000 * 60 * 60 * 24;
+    const horaEmMs = 1000 * 60 * 60;
+    const minutoEmMs = 1000 * 60;
+
+    const diasAteOEvento = Math.floor(distanciaAteOEvento / diaEmMs);
+    const horasAteOEvento = Math.floor((distanciaAteOEvento % diaEmMs) / horaEmMs);
+    const minutosAteOEvento = Math.floor((distanciaAteOEvento % horaEmMs) / minutoEmMs);
+    const segundosAteOEvento = Math.floor((distanciaAteOEvento % minutoEmMs) / 1000);
+
+    document.getElementById('contador').innerHTML = `${diasAteOEvento}d ${horasAteOEvento}h ${minutosAteOEvento}m ${segundosAteOEvento}s`;
+
+    if (distanciaAteOEvento < 0) {
+        clearInterval(contaAsHoras);
+        document.getElementById('contador').innerHTML = 'Evento expirado!'
+    }
+}, 1000);
