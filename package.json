@@ -1,10 +1,14 @@
 {
+<<<<<<< HEAD
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.3",
     "parcel": "^2.9.3",
     "sass": "^1.69.0"
   },
   "name": "proyect",
+=======
+  "name": "exercicio_evento",
+>>>>>>> f39e57f24edef5f62a6d4105ee5e266d709ff036
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
@@ -118,5 +122,12 @@
   },
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "description": ""
+=======
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3"
+  }
+>>>>>>> f39e57f24edef5f62a6d4105ee5e266d709ff036
 }
